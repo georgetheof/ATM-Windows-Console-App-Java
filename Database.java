@@ -66,6 +66,7 @@ public class Database {
                 if(conn != null)
                 conn.close();
             }catch(SQLException se){
+                conn.close();
             }
         }
     }
